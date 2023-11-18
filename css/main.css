@@ -1,3 +1,18 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
 header {
     color: darkblue;
     font-size: 6vmin;
@@ -5,14 +20,10 @@ header {
 }
 
 
-body {
-    background-color: lightblue;
-
-}
 
 h2 {
     font-size: 5 vmin;
-    color: magenta
+    color: magenta;
 }
 
 #board {
@@ -21,9 +32,10 @@ h2 {
     grid-template-rows: repeat(3, 10vmin);
     gap: 1vmin;
     margin-top: -2vmin;
+    color: blue;
 }
 
 #board>div {
-    border:0.2vmin darkblue;
+    border:2vmin darkblue;
     border-radius: 50%;
 }
