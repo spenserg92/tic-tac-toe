@@ -1,0 +1,29 @@
+header {
+    color: darkblue;
+    font-size: 6vmin;
+    letter-spacing: 2vmin;
+}
+
+
+body {
+    background-color: lightblue;
+
+}
+
+h2 {
+    font-size: 5 vmin;
+    color: magenta
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 10vmin);
+    grid-template-rows: repeat(3, 10vmin);
+    gap: 1vmin;
+    margin-top: -2vmin;
+}
+
+#board>div {
+    border:0.2vmin darkblue;
+    border-radius: 50%;
+}
