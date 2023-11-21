@@ -55,4 +55,9 @@ console.log(boxes)
     // 4.1) Initialize the state variables:
     //   4.1.1) Initialize the board array to 9 nulls to represent empty squares. The 9 elements will "map" to each square, where index 0 maps to the top-left square and index 8 maps to the bottom-right square.
 
+    
+
     //   4.1.2)
+//////////////////////////////////
+// This is as far as I got. I'm strugglilng with the concept of using arrays and loops and how those work together. 
+///////////////////////////////////
