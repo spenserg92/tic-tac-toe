@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
@@ -8,34 +8,48 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     margin: 0;
 
 }
 
-header {
+h1 {
     color: darkblue;
     font-size: 6vmin;
     letter-spacing: 2vmin;
 }
 
-
-
-h2 {
-    font-size: 5 vmin;
-    color: magenta;
+#message {
+    margin-top: 0;
+    margin-bottom: 5vmin;
+    color: grey;
 }
 
 #board {
     display: grid;
-    grid-template-columns: repeat(3, 10vmin);
-    grid-template-rows: repeat(3, 10vmin);
-    gap: 1vmin;
-    margin-top: -2vmin;
-    color: blue;
+    grid-template-columns: repeat(3, 20vmin);
+    grid-template-rows: repeat(3, 20vmin);
+    background-color: lightgray;
+    border-radius: 5vmin;
 }
 
 #board>div {
-    border:2vmin darkblue;
+    margin: 3vmin;
+    border: 1 vmin solid white;
     border-radius: 50%;
+    background-color: darkgrey;
+    background-size: contain;
+    
+}
+
+
+
+button {
+    margin-top: 5vmin;
+    padding: 1.5vmin;
+    background-color: grey;
+    color: white;
+    border-radius: 2vmin;
+    font-size: 4vmin;
 }

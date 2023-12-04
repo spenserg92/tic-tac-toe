@@ -7,17 +7,16 @@ const colors = {
     1: 'magenta',
     '-1': 'teal'
 }
-const winSolution = {
-    Solution1: [document.getElementById('#c0r2'), document.getElementById('#c0r1'), document.getElementById('#c0r0')],
-    Solution2: [document.getElementById('#c1r2'), document.getElementById('#c1r1'), document.getElementById('#c1r0')],
-    Solution3: [document.getElementById('#c2r2'), document.getElementById('#c2r1'), document.getElementById('#c2r0')],
-    Solution4: [document.getElementById('#c0r2'), document.getElementById('#c1r2'), document.getElementById('#c2r2')],
-    Solution5: [document.getElementById('#c0r1'), document.getElementById('#c1r1'), document.getElementById('#c2r1')],
-    Solution6: [document.getElementById('#c0r0'), document.getElementById('#c1r0'), document.getElementById('#c2r0')],
-    Solution7: [document.getElementById('#c0r0'), document.getElementById('#c1r1'), document.getElementById('#c2r2')],
-    Solution8: [document.getElementById('#c0r2'), document.getElementById('#c1r1'), document.getElementById('#c2r0')],
-    
-}
+const winSolution = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7 ,8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+]
 console.log(winSolution)
 	/*----- state variables -----*/
 
@@ -33,6 +32,7 @@ function init(){
         [0, 0, 0], //col 1
         [0, 0, 0], //col 2
     ]
+    render()
     
 }
 
@@ -46,18 +46,8 @@ init()
 const messageEl = document.querySelector('h2')
 const newGameButton = document.querySelector('button')
 let boxes = [...document.querySelectorAll('#board > div')]
-console.log(boxes)
+
 	/*----- event listeners -----*/
 
 
 	/*----- functions -----*/
-    // 4) Upon loading the app should:
-    // 4.1) Initialize the state variables:
-    //   4.1.1) Initialize the board array to 9 nulls to represent empty squares. The 9 elements will "map" to each square, where index 0 maps to the top-left square and index 8 maps to the bottom-right square.
-
-    
-
-    //   4.1.2)
-//////////////////////////////////
-// This is as far as I got. I'm strugglilng with the concept of using arrays and loops and how those work together. 
-///////////////////////////////////
